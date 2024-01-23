@@ -1,0 +1,13 @@
+a:link{
+    color: brown;
+}
+a:hover{
+    background-color: blue;
+}
+a:active{
+    background-color: red;
+
+}
+a:focus{
+    background-color: orange;
+}
