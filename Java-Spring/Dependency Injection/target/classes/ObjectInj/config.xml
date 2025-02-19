@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="ObjectInj.User" name="u1">
+		<property name="id" value="1"/>
+		<property name="name" value="vrunda"/>
+		<property name="address" ref="a1"/>
+		
+	</bean>
+	<bean class="ObjectInj.Address" name="a1">
+		<property name="hno" value="100"/>
+		<property name="city" value="Nadiad"/>
+		
+		
+	</bean>
+	<bean class="ObjectInj.Address" name="a2">
+		<property name="hno" value="12"/>
+		<property name="city" value="delhi"/>
+	</bean>
+
+</beans>

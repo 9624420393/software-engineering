@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+		
+		<bean class="collectionType.User" name="u1">
+		<property name="id" value="1"/>
+		<property name="name" value= "vrunda"/>
+		<property name="contactList">
+			<list>
+				<value>Nadiad</value>
+				<value>Ahmedabad</value>
+				<value>Surat</value>
+				<value>Vapi</value>
+			</list>
+		</property>
+		<property name="contacts">
+			<set>
+				<value>8569714626</value>
+				<value>9654784651</value>
+				<value>9845623178</value>
+			</set>
+		</property>
+		<property name="bankAccount">
+			<map>
+				<entry key="1234" value="xxxx"/>
+				<entry key="2345" value="zzzz"/>
+				<entry key="3456" value="qqqq"/>
+			</map>
+		</property>
+	</bean>	
+</beans>
